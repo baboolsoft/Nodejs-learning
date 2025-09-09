@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express';
 import { employeeCreate, employeeDelete, employeeDetail, employeeGet, employeeUpdate } from "../controller/employee.controller.js";
 import connectDB from "../lib/db.js";
 
