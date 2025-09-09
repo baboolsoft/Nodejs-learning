@@ -7,7 +7,7 @@ import employeeRouter from './Routes/employee.route.js';
 
 
 let app=express();
-let PORT=3000;
+let PORT=4000;
 
 //use middleware to parse the json data
 app.use(express.json())
@@ -23,6 +23,8 @@ app.use('/register',authEmployeeRouter)
 app.use('/login',authLoginRouter);
 
 
-app.listen(PORT,()=>{
+
+app.listen(PORT, () => {
+
     console.log(`server is running at port  http://localhost:${PORT}`);
 })
