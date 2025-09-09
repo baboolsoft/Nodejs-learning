@@ -5,7 +5,7 @@ import Employee from "../models/employee.model.js";
 export const employeeGet = async (req,res)=>{
     try{
       const employees= await Employee.find()
-      res.json(employees)
+      res.status(201).json(employees)
     }
     catch(err){
       res.status(500).json({message:err.message})

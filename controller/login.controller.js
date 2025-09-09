@@ -10,10 +10,10 @@ const authLogin = async (req,res)=>{
         }
         let validatepassword=await bcrypt.compare(req.body.password,user.password)
         if(!validatepassword){
-            return res.send('password incorrect')
+            return res.status(400).send('password incorrect')
         }
         else{
-            res.json('logged successfully!!')
+            res.status(200).json('logged successfully!!')
         }
     }
     catch(err){
