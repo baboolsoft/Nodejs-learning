@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "2e54cf9e-e6f4-464c-a177-5adbb4902954",
+		"name": "my-collection.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48312724",
+		"_collection_link": "https://gowri-c-7512-3585602.postman.co/workspace/gowri-c-7512's-Workspace~38fbc3ec-d001-430b-8790-679871e1afc2/collection/48312724-2e54cf9e-e6f4-464c-a177-5adbb4902954?action=share&source=collection_link&creator=48312724"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "f_name",
+							"value": "ridhuna",
+							"type": "default"
+						},
+						{
+							"key": "l_name",
+							"value": "sri",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "ridhunasri@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "gdbhdhj",
+							"type": "default"
+						},
+						{
+							"key": "sal",
+							"value": "15,000",
+							"type": "default"
+						},
+						{
+							"key": "h_date",
+							"value": "1.2.2025",
+							"type": "default"
+						},
+						{
+							"key": "job",
+							"value": "frontend-developer",
+							"type": "default"
+						},
+						{
+							"key": "emp_status",
+							"value": "active",
+							"type": "default"
+						},
+						{
+							"key": "dob",
+							"value": "12.10.2003",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890",
+							"type": "default"
+						},
+						{
+							"key": "dept",
+							"value": "software developer",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
