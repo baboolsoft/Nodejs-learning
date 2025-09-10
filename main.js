@@ -1,9 +1,7 @@
 
 import express from 'express';
-import authEmployeeRouter from './Routes/auth.employee.route.js';
 import authLoginRouter from './Routes/auth.login.route.js';
-import employeeRouter from './Routes/employee.route.js';
-
+import authEmployeeRouter from './Routes/auth.register.route.js';
 
 
 let app=express();
@@ -18,7 +16,7 @@ app.get('/test',(req,res)=>{
 })
 
 //CURD functionality of employees
-app.use('/employees',employeeRouter)
+
 app.use('/register',authEmployeeRouter)
 app.use('/login',authLoginRouter);
 

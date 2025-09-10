@@ -1,13 +1,13 @@
 import express from 'express';
-import { employeeCreate, employeeDelete, employeeDetail, employeeGet, employeeUpdate } from "../controller/employee.controller.js";
-import connectDB from "../lib/db.js";
+import connectDB from "../config/db.js";
+import { employeeCreate, employeeDelete, employeeDetail, employeeGet, employeeUpdate } from "../controller/auth.register.controller.js";
+
 
 let  router = express.Router();
 
 connectDB();
 
 // R- for Read
-
 router.get('/',employeeGet)
 
 // s - for show employee details

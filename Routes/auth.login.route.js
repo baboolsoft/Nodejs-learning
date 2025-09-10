@@ -1,6 +1,6 @@
 
 import express from 'express';
-import authLogin from '../controller/login.controller.js';
+import authLogin from '../controller/auth.login.controller.js';
 
 let router=express.Router()
 
