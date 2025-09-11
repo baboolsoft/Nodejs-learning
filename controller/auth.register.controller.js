@@ -12,7 +12,7 @@ export const employeeGet = async (req, res) => {
         res.status(201).json({
             statusCode: 200,
             success: true,
-            Date: employees,
+            Data: employees,
             accessToken: getToken
         });
     } catch (err) {
