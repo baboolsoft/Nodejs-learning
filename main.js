@@ -2,11 +2,12 @@
 import express from 'express';
 import authLoginRouter from './Routes/auth.login.route.js';
 import authEmployeeRouter from './Routes/auth.register.route.js';
-
+import cors from 'cors';
 
 let app=express();
 let PORT=4000;
 
+app.use(cors());
 //use middleware to parse the json data
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
